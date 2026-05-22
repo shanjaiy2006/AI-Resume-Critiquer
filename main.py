@@ -43,6 +43,25 @@ footer {
 header {
     visibility: hidden;
 }
+/* Hide Streamlit floating toolbar */
+[data-testid="stStatusWidget"] {
+    display: none;
+}
+
+/* Hide deploy button / floating icons */
+.stAppDeployButton {
+    display: none;
+}
+
+/* Hide fullscreen button */
+button[title="View fullscreen"] {
+    visibility: hidden;
+}
+
+/* Hide bottom-right decoration */
+[data-testid="stDecoration"] {
+    display: none;
+}
 
 </style>
 """,

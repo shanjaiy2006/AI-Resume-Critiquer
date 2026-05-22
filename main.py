@@ -33,7 +33,6 @@ job_description = st.text_area(
     "Enter the job description or role you're targeting", height=150
 )
 analyze_button = st.button("Analyze Resume")
-rewrite_button = st.button("Rewrite Resume")
 
 
 def extract_text_from_pdf(uploaded_file):

@@ -16,12 +16,34 @@ st.write(
 st.markdown(
     """
 <style>
-.stButton button {
-    width: 100%;
-    border-radius: 10px;
-    height: 3em;
-    font-size: 16px;
+
+/* Hide GitHub icon */
+a[href*="github.com"] {
+    display: none !important;
 }
+
+/* Hide top-right toolbar buttons */
+[data-testid="stToolbar"] {
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+}
+
+/* Hide hamburger menu */
+#MainMenu {
+    visibility: hidden;
+}
+
+/* Hide footer */
+footer {
+    visibility: hidden;
+}
+
+/* Hide header */
+header {
+    visibility: hidden;
+}
+
 </style>
 """,
     unsafe_allow_html=True,
